@@ -3,8 +3,8 @@
     <h1>{{ msg }}</h1>
     <p>Please log in</p>
     <ul>
-      <li><button @click="login">Login with Google+</button></li>
-      <li><button>Login with Facebook</button></li>
+      <li><button class="btn btn-primary" @click="login">Login with Google+</button></li>
+      <li><button class="btn btn-primary">Login with Facebook</button></li>
     </ul>
   </div>
 </template>

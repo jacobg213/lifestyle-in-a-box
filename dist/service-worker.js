@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.08260ba5204204f0c83afe7ceb54004b.js"
+  "/precache-manifest.ab30db1eeb169c5124fd3bd396ca3113.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "lifestyle-in-a-box"});
