@@ -1,5 +1,7 @@
 # lifestyle-in-a-box
 
+Demo available [here](https://lifestyle-in-a-box.firebaseapp.com)
+
 ## Project setup
 ```
 npm install
