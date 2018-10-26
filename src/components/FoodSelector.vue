@@ -1,7 +1,7 @@
 <template>
   <div class="single-day-food-selector">
     <div class="meal-selector my-4">
-      <b-card title="Meal 1">
+      <b-card title="Breakfast">
         <v-select :options="recipes" v-model="selected.one" label="label" @input="updateMeal($event, 'one')">
           <template slot="option" slot-scope="option">
             <img :src="option.image" :alt="option.label" height="100px" width="auto">
@@ -11,7 +11,7 @@
       </b-card>
     </div>
     <div class="meal-selector my-4">
-      <b-card title="Meal 2">
+      <b-card title="Brunch">
         <v-select :options="recipes" v-model="selected.two" label="label" @input="updateMeal($event, 'two')">
           <template slot="option" slot-scope="option">
             <img :src="option.image" :alt="option.label" height="100px" width="auto">
@@ -21,7 +21,7 @@
       </b-card>
     </div>
     <div class="meal-selector my-4">
-      <b-card title="Meal 3">
+      <b-card title="Lunch">
         <v-select :options="recipes" v-model="selected.three" label="label" @input="updateMeal($event, 'three')">
           <template slot="option" slot-scope="option">
             <img :src="option.image" :alt="option.label" height="100px" width="auto">
@@ -31,7 +31,7 @@
       </b-card>
     </div>
     <div class="meal-selector my-4">
-      <b-card title="Meal 4">
+      <b-card title="Dinner">
         <v-select :options="recipes" v-model="selected.four" label="label" @input="updateMeal($event, 'four')">
           <template slot="option" slot-scope="option">
             <img :src="option.image" :alt="option.label" height="100px" width="auto">
@@ -41,7 +41,7 @@
       </b-card>
     </div>
     <div class="meal-selector my-4">
-      <b-card title="Meal 5">
+      <b-card title="Supper">
         <v-select :options="recipes" v-model="selected.five" label="label" @input="updateMeal($event, 'five')">
           <template slot="option" slot-scope="option">
             <img :src="option.image" :alt="option.label" height="100px" width="auto">
@@ -50,7 +50,7 @@
         </v-select>
       </b-card>
     </div>
-    <div :class="{ 'too-much': caloriesInMeals > maxCalories }" class="calorie-counter align-items-center justify-content-center">
+    <div :class="{ 'too-much': caloriesInMeals > maxCalories }" class="calorie-counter align-items-center justify-content-center mb-2">
       <span>Calories: {{ caloriesInMeals }}/{{ maxCalories }}</span>
     </div>
   </div>
